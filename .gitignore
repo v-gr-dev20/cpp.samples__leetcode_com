@@ -1,0 +1,62 @@
+﻿# Prerequisites
+*.d
+
+# Other solution
+*.sln
+
+# Compiled Object files
+*.slo
+*.lo
+*.o
+*.obj
+
+# Precompiled Headers
+*.gch
+*.pch
+
+# Compiled Dynamic libraries
+*.so
+*.dylib
+*.dll
+
+# Fortran module files
+*.mod
+*.smod
+
+# Compiled Static libraries
+*.lai
+*.la
+*.a
+*.lib
+
+# Executables
+*.exe
+*.out
+*.app
+
+# Additional
+*.suo
+*.db
+*.opendb
+*.ipch
+*.user
+*.ilk
+*.log
+*.pdb
+*.tlog
+*.lastbuildstate
+*.idb
+*.iobj
+*.ipdb
+
+# External
+extern
+
+# Build
+build/
+build-*/
+CMakeFiles/
+.vs/
+Debug/
+Release/
+x64/
