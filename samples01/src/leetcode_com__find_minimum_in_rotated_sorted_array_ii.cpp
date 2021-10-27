@@ -25,7 +25,7 @@
 // 	Follow up : This problem is similar to Find Minimum in Rotated Sorted Array, but nums may contain duplicates.Would this affect the runtime complexity ? How and why ?
 
 #include "pch.h"
-#include "leetcode_com__findMin.h"
+#include "leetcode_com__find_minimum_in_rotated_sorted_array_ii.h"
 #include "tools.h"
 #include "myAssert.h"
 #include <iostream>
@@ -33,7 +33,7 @@
 #include <vector>
 
 namespace {
-LeetcodeCom_Problems::CFindMin problem;
+LeetcodeCom_Problems::CFindMinimumInRotatedSortedArrayII problem;
 
 using namespace std;
 
@@ -87,33 +87,33 @@ int Solution::findMin(vector<int>& nums)
 	return doFindMinAndAreAllEq(nums.begin(), nums.end() - 1).first;
 }
 
-LeetcodeCom_Problems::CFindMin::CFindMin()
-	: CBaseSample( "leetcode_com__findMin" )
+LeetcodeCom_Problems::CFindMinimumInRotatedSortedArrayII::CFindMinimumInRotatedSortedArrayII()
+	: CBaseSample( "leetcode_com__find_minimum_in_rotated_sorted_array_ii" )
 {
 }
 
-LeetcodeCom_Problems::CFindMin::~CFindMin()
+LeetcodeCom_Problems::CFindMinimumInRotatedSortedArrayII::~CFindMinimumInRotatedSortedArrayII()
 {
 }
 
-void LeetcodeCom_Problems::CFindMin::Input( istream& iStream, ostream& oStream )
+void LeetcodeCom_Problems::CFindMinimumInRotatedSortedArrayII::Input( istream& iStream, ostream& oStream )
 {
 	oStream << "Input vector: ";
 	nums = Tools::InputNumbers(iStream);
 }
 
-void LeetcodeCom_Problems::CFindMin::Run()
+void LeetcodeCom_Problems::CFindMinimumInRotatedSortedArrayII::Run()
 {
 	result = Solution().findMin(nums);
 }
 
-void LeetcodeCom_Problems::CFindMin::Report( vector<string>& reportLines ) const
+void LeetcodeCom_Problems::CFindMinimumInRotatedSortedArrayII::Report( vector<string>& reportLines ) const
 {
 	reportLines.clear();
 	reportLines.push_back( "Result: " + to_string( result ) );
 }
 
-void LeetcodeCom_Problems::CFindMin::Clean()
+void LeetcodeCom_Problems::CFindMinimumInRotatedSortedArrayII::Clean()
 {
 	nums.clear();
 }

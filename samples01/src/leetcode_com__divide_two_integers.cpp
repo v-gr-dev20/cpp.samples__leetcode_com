@@ -35,7 +35,7 @@
 // 	divisor != 0
 
 #include "pch.h"
-#include "leetcode_com__divide.h"
+#include "leetcode_com__divide_two_integers.h"
 #include "myAssert.h"
 #include <iostream>
 #include <sstream>
@@ -96,7 +96,7 @@ int Solution::divide( int dividend, int divisor )
 }
 
 LeetcodeCom_Problems::CDivideTwoIntegers::CDivideTwoIntegers()
-	: CBaseSample( "leetcode_com__divide" )
+	: CBaseSample( "leetcode_com__divide_two_integers" )
 {
 }
 

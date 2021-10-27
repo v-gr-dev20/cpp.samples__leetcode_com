@@ -38,7 +38,7 @@
 // s and t consist of English letters.
 
 #include "pch.h"
-#include "leetcode_com__numDistinct.h"
+#include "leetcode_com__distinct_subsequences.h"
 #include "myAssert.h"
 #include <iostream>
 #include <string>
@@ -57,7 +57,7 @@ class Solution {
 public:
 	int numDistinct( string s, string t );
 private:
-	int getNumDistinct( const vector<char>& sAfterFilter, const vector<char>& tVector );
+	int findNumDistinct( const vector<char>& sAfterFilter, const vector<char>& tVector );
 };
 } // namespace
 
@@ -75,10 +75,10 @@ int Solution::numDistinct( string s, string t )
 			sAfterFilter.push_back( c );
 		}
 	}
-	return getNumDistinct( sAfterFilter, tVector );
+	return findNumDistinct( sAfterFilter, tVector );
 }
 
-int Solution::getNumDistinct( const vector<char>& sAfterFilter, const vector<char>& tVector )
+int Solution::findNumDistinct( const vector<char>& sAfterFilter, const vector<char>& tVector )
 {
 	stack<pair<vector<char>::const_iterator, int>> counterBySPosStack;
 	counterBySPosStack.push( make_pair( end( sAfterFilter ), 0 ) );
@@ -120,7 +120,7 @@ int Solution::getNumDistinct( const vector<char>& sAfterFilter, const vector<cha
 }
 
 LeetcodeCom_Problems::CDistinctSubsequences::CDistinctSubsequences()
-	: CBaseSample( "leetcode_com__numDistinct" )
+	: CBaseSample( "leetcode_com__distinct_subsequences" )
 {
 }
 

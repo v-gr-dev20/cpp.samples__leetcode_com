@@ -7,16 +7,18 @@
 
 namespace LeetcodeCom_Problems {
 
-class CFindFirstAndLast : public CBaseSample {
+class CSubarraySumEqualsK : public CBaseSample {
 public:
-	CFindFirstAndLast();
+	CSubarraySumEqualsK();
 	virtual void Input( std::istream&, std::ostream& ) override;
 	virtual void Run() override;
 	virtual void Report( std::vector<std::string>& reportLines ) const override;
-	virtual ~CFindFirstAndLast() override;
+	virtual void Clean() override;
+	virtual ~CSubarraySumEqualsK() override;
 private:
-	std::vector<int> numbers;
-	int target;
-	std::vector<int> result;
+	std::vector<int> nums;
+	int sum;
+	int result;
 };
+
 } // namespace LeetcodeCom_Problems

@@ -24,7 +24,7 @@
 // It is guaranteed that the list represents a number that does not have leading zeros.
 
 #include "pch.h"
-#include "leetcode_com__addTwoNumbers.h"
+#include "leetcode_com__add_two_numbers.h"
 #include "tools.h"
 #include "myAssert.h"
 #include <iostream>
@@ -77,7 +77,7 @@ void LeetcodeCom_Problems::CAddTwoNumbers::ListNode::clean( ListNode*& first ) {
 }
 
 LeetcodeCom_Problems::CAddTwoNumbers::CAddTwoNumbers()
-	: CBaseSample( "leetcode_com__addTwoNumbers" )
+	: CBaseSample( "leetcode_com__add_two_numbers" )
 {
 }
 

@@ -25,7 +25,7 @@
 // 	- 10^9 <= target <= 10^9
 
 #include "pch.h"
-#include "leetcode_com__searchRange.h"
+#include "leetcode_com__find_first_and_last_position_of_element_in_sorted_array.h"
 #include "tools.h"
 #include "myAssert.h"
 #include <iostream>
@@ -36,7 +36,7 @@
 #include <algorithm>
 
 namespace {
-LeetcodeCom_Problems::CFindFirstAndLast problem;
+LeetcodeCom_Problems::CFindFirstAndLastPositionOfElementInSortedArray problem;
 
 using namespace std;
 
@@ -91,16 +91,16 @@ vector<int> Solution::searchRange( vector<int>& nums, int target )
 	return result;
 }
 
-LeetcodeCom_Problems::CFindFirstAndLast::CFindFirstAndLast()
-	: CBaseSample( "leetcode_com__searchRange" )
+LeetcodeCom_Problems::CFindFirstAndLastPositionOfElementInSortedArray::CFindFirstAndLastPositionOfElementInSortedArray()
+	: CBaseSample( "leetcode_com__find_first_and_last_position_of_element_in_sorted_array" )
 {
 }
 
-LeetcodeCom_Problems::CFindFirstAndLast::~CFindFirstAndLast()
+LeetcodeCom_Problems::CFindFirstAndLastPositionOfElementInSortedArray::~CFindFirstAndLastPositionOfElementInSortedArray()
 {
 }
 
-void LeetcodeCom_Problems::CFindFirstAndLast::Input( istream& iStream, ostream& oStream )
+void LeetcodeCom_Problems::CFindFirstAndLastPositionOfElementInSortedArray::Input( istream& iStream, ostream& oStream )
 {
 	oStream << "Input numbers: ";
 	numbers = Tools::InputNumbers( iStream );
@@ -108,12 +108,12 @@ void LeetcodeCom_Problems::CFindFirstAndLast::Input( istream& iStream, ostream& 
 	iStream >> target;
 }
 
-void LeetcodeCom_Problems::CFindFirstAndLast::Run()
+void LeetcodeCom_Problems::CFindFirstAndLastPositionOfElementInSortedArray::Run()
 {
 	result = Solution().searchRange( numbers, target );
 }
 
-void LeetcodeCom_Problems::CFindFirstAndLast::Report( vector<string>& reportLines ) const
+void LeetcodeCom_Problems::CFindFirstAndLastPositionOfElementInSortedArray::Report( vector<string>& reportLines ) const
 {
 	reportLines.clear();
 	ostringstream resultStream;

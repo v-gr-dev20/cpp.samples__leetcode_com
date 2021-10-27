@@ -17,7 +17,7 @@
 // 	- 10^7 <= k <= 10^7
 
 #include "pch.h"
-#include "leetcode_com__subarraySum.h"
+#include "leetcode_com__subarray_sum_equals_k.h"
 #include "tools.h"
 #include "myAssert.h"
 #include <iostream>
@@ -26,7 +26,7 @@
 #include <set>
 
 namespace {
-LeetcodeCom_Problems::CSubarraySum problem;
+LeetcodeCom_Problems::CSubarraySumEqualsK problem;
 
 using namespace std;
 
@@ -51,16 +51,16 @@ int Solution::subarraySum(std::vector<int>& nums, int k) {
 	return result;
 }
 
-LeetcodeCom_Problems::CSubarraySum::CSubarraySum()
-	: CBaseSample( "leetcode_com__subarraySum" )
+LeetcodeCom_Problems::CSubarraySumEqualsK::CSubarraySumEqualsK()
+	: CBaseSample( "leetcode_com__subarray_sum_equals_k" )
 {
 }
 
-LeetcodeCom_Problems::CSubarraySum::~CSubarraySum()
+LeetcodeCom_Problems::CSubarraySumEqualsK::~CSubarraySumEqualsK()
 {
 }
 
-void LeetcodeCom_Problems::CSubarraySum::Input( istream& iStream, ostream& oStream )
+void LeetcodeCom_Problems::CSubarraySumEqualsK::Input( istream& iStream, ostream& oStream )
 {
 	oStream << "Input numbers: ";
 	nums = Tools::InputNumbers(iStream);
@@ -69,18 +69,18 @@ void LeetcodeCom_Problems::CSubarraySum::Input( istream& iStream, ostream& oStre
 	iStream >> sum;
 }
 
-void LeetcodeCom_Problems::CSubarraySum::Run()
+void LeetcodeCom_Problems::CSubarraySumEqualsK::Run()
 {
 	result = Solution().subarraySum(nums, sum);
 }
 
-void LeetcodeCom_Problems::CSubarraySum::Report( vector<string>& reportLines ) const
+void LeetcodeCom_Problems::CSubarraySumEqualsK::Report( vector<string>& reportLines ) const
 {
 	reportLines.clear();
 	reportLines.push_back( "Result: " + to_string( result ) );
 }
 
-void LeetcodeCom_Problems::CSubarraySum::Clean()
+void LeetcodeCom_Problems::CSubarraySumEqualsK::Clean()
 {
 	nums.clear();
 	sum = 0;

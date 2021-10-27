@@ -36,7 +36,7 @@
 // 	- 10^6 <= nums1[i], nums2[i] <= 10^6
 
 #include "pch.h"
-#include "leetcode_com__findMedianSortedArrays.h"
+#include "leetcode_com__median_of_two_sorted_arrays.h"
 #include "tools.h"
 #include "myAssert.h"
 #include <iostream>
@@ -181,7 +181,7 @@ tuple<bool, double> Solution::findMedianSortedRanges( vector<int>& v1, vector<in
 }
 
 LeetcodeCom_Problems::CMedianOfTwoSortedArrays::CMedianOfTwoSortedArrays()
-	: CBaseSample( "leetcode_com__findMedianSortedArrays" )
+	: CBaseSample( "leetcode_com__median_of_two_sorted_arrays" )
 {
 }
 

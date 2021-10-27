@@ -20,7 +20,7 @@
 // 	- 2^31 <= nums[i] <= 2^31 - 1
 
 #include "pch.h"
-#include "leetcode_com__firstMissingPositive.h"
+#include "leetcode_com__first_missing_positive.h"
 #include "tools.h"
 #include "myAssert.h"
 #include <iostream>
@@ -91,7 +91,7 @@ int Solution::findFirstMissed( vector<int>& v, int left, int right, int beginVal
 }
 
 LeetcodeCom_Problems::CFirstMissingPositive::CFirstMissingPositive()
-	: CBaseSample( "leetcode_com__firstMissingPositive" )
+	: CBaseSample( "leetcode_com__first_missing_positive" )
 {
 }
 

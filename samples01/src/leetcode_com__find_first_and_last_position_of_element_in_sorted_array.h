@@ -7,18 +7,16 @@
 
 namespace LeetcodeCom_Problems {
 
-class CSubarraySum : public CBaseSample {
+class CFindFirstAndLastPositionOfElementInSortedArray : public CBaseSample {
 public:
-	CSubarraySum();
+	CFindFirstAndLastPositionOfElementInSortedArray();
 	virtual void Input( std::istream&, std::ostream& ) override;
 	virtual void Run() override;
 	virtual void Report( std::vector<std::string>& reportLines ) const override;
-	virtual void Clean() override;
-	virtual ~CSubarraySum() override;
+	virtual ~CFindFirstAndLastPositionOfElementInSortedArray() override;
 private:
-	std::vector<int> nums;
-	int sum;
-	int result;
+	std::vector<int> numbers;
+	int target;
+	std::vector<int> result;
 };
-
 } // namespace LeetcodeCom_Problems

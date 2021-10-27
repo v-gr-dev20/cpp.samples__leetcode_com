@@ -29,7 +29,7 @@
 // grid[i][j] is '0' or '1'.
 
 #include "pch.h"
-#include "leetcode_com__numIslands.h"
+#include "leetcode_com__number_of_islands.h"
 #include "tools.h"
 #include "myAssert.h"
 #include <iostream>
@@ -176,7 +176,7 @@ int Solution2::numIslands( vector<vector<char>>& grid )
 }
 
 LeetcodeCom_Problems::CNumberOfIslands::CNumberOfIslands()
-	: CBaseSample( "leetcode_com__numIslands" )
+	: CBaseSample( "leetcode_com__number_of_islands" )
 {
 }
 

@@ -22,7 +22,7 @@
 // All the pairs (xi, yi) are unique.
 
 #include "pch.h"
-#include "leetcode_com__orderOfLargestPlusSign.h"
+#include "leetcode_com__largest_plus_sign.h"
 #include "tools.h"
 #include "myAssert.h"
 #include <iostream>
@@ -162,7 +162,7 @@ Solution::CPlacingType Solution::getOnSquarePerimeterPlacing( const pair<int, in
 }
 
 LeetcodeCom_Problems::CLargestPlusSign::CLargestPlusSign()
-	: CBaseSample( "leetcode_com__orderOfLargestPlusSign" )
+	: CBaseSample( "leetcode_com__largest_plus_sign" )
 {
 }
 

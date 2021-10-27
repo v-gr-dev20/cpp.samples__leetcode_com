@@ -21,7 +21,7 @@
 // 	- 10^9 <= target <= 10^9
 
 #include "pch.h"
-#include "leetcode_com__fourSum.h"
+#include "leetcode_com__4Sum.h"
 #include "tools.h"
 #include "myAssert.h"
 #include <iostream>
@@ -97,7 +97,7 @@ vector<vector<int>> Solution::fourSum( vector<int>& nums, int target4 )
 }
 
 LeetcodeCom_Problems::C4Sum::C4Sum()
-	: CBaseSample( "leetcode_com__fourSum" )
+	: CBaseSample( "leetcode_com__4Sum" )
 {
 }
 

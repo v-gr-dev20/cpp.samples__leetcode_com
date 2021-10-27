@@ -38,7 +38,7 @@
 // grid[0][0] == grid[m - 1][n - 1] == 0
 
 #include "pch.h"
-#include "leetcode_com__shortestPath.h"
+#include "leetcode_com__shortest_path_in_a_grid_with_obstacles_elimination.h"
 #include "tools.h"
 #include "myAssert.h"
 #include <iostream>
@@ -119,7 +119,7 @@ int Solution::shortestPath( vector<vector<int>>& grid, int k )
 }
 
 LeetcodeCom_Problems::CShortestPathInAGridWithObstaclesElimination::CShortestPathInAGridWithObstaclesElimination()
-	: CBaseSample( "leetcode_com__shortestPath" )
+	: CBaseSample( "leetcode_com__shortest_path_in_a_grid_with_obstacles_elimination" )
 {
 }
 

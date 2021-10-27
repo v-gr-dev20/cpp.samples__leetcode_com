@@ -10,43 +10,43 @@
     <ClCompile Include="..\main.cpp" />
     <ClCompile Include="..\tests.cpp" />
     <ClCompile Include="..\pch.cpp" />
-    <ClCompile Include="..\..\src\leetcode_com__addTwoNumbers.cpp">
-      <Filter>src</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\src\leetcode_com__divide.cpp">
-      <Filter>src</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\src\leetcode_com__findMedianSortedArrays.cpp">
-      <Filter>src</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\src\leetcode_com__firstMissingPositive.cpp">
-      <Filter>src</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\src\leetcode_com__fourSum.cpp">
-      <Filter>src</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\src\leetcode_com__numDistinct.cpp">
-      <Filter>src</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\src\leetcode_com__numIslands.cpp">
-      <Filter>src</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\src\leetcode_com__orderOfLargestPlusSign.cpp">
-      <Filter>src</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\src\leetcode_com__searchRange.cpp">
-      <Filter>src</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\src\leetcode_com__shortestPath.cpp">
-      <Filter>src</Filter>
-    </ClCompile>
     <ClCompile Include="..\..\src\leetcode_com__palindromic_substrings.cpp">
       <Filter>src</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\src\leetcode_com__subarraySum.cpp">
+    <ClCompile Include="..\..\src\leetcode_com__add_two_numbers.cpp">
       <Filter>src</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\src\leetcode_com__findMin.cpp">
+    <ClCompile Include="..\..\src\leetcode_com__divide_two_integers.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\leetcode_com__median_of_two_sorted_arrays.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\leetcode_com__find_minimum_in_rotated_sorted_array_ii.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\leetcode_com__first_missing_positive.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\leetcode_com__4Sum.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\leetcode_com__distinct_subsequences.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\leetcode_com__number_of_islands.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\leetcode_com__largest_plus_sign.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\leetcode_com__find_first_and_last_position_of_element_in_sorted_array.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\leetcode_com__shortest_path_in_a_grid_with_obstacles_elimination.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\leetcode_com__subarray_sum_equals_k.cpp">
       <Filter>src</Filter>
     </ClCompile>
   </ItemGroup>
@@ -70,43 +70,43 @@
     <ClInclude Include="..\..\..\common\tools.h">
       <Filter>common</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\src\leetcode_com__addTwoNumbers.h">
-      <Filter>src</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\src\leetcode_com__divide.h">
-      <Filter>src</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\src\leetcode_com__findMedianSortedArrays.h">
-      <Filter>src</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\src\leetcode_com__firstMissingPositive.h">
-      <Filter>src</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\src\leetcode_com__fourSum.h">
-      <Filter>src</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\src\leetcode_com__numDistinct.h">
-      <Filter>src</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\src\leetcode_com__numIslands.h">
-      <Filter>src</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\src\leetcode_com__orderOfLargestPlusSign.h">
-      <Filter>src</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\src\leetcode_com__searchRange.h">
-      <Filter>src</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\src\leetcode_com__shortestPath.h">
-      <Filter>src</Filter>
-    </ClInclude>
     <ClInclude Include="..\..\src\leetcode_com__palindromic_substrings.h">
       <Filter>src</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\src\leetcode_com__subarraySum.h">
+    <ClInclude Include="..\..\src\leetcode_com__add_two_numbers.h">
       <Filter>src</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\src\leetcode_com__findMin.h">
+    <ClInclude Include="..\..\src\leetcode_com__divide_two_integers.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\leetcode_com__median_of_two_sorted_arrays.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\leetcode_com__find_minimum_in_rotated_sorted_array_ii.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\leetcode_com__first_missing_positive.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\leetcode_com__4Sum.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\leetcode_com__distinct_subsequences.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\leetcode_com__number_of_islands.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\leetcode_com__largest_plus_sign.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\leetcode_com__find_first_and_last_position_of_element_in_sorted_array.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\leetcode_com__shortest_path_in_a_grid_with_obstacles_elimination.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\leetcode_com__subarray_sum_equals_k.h">
       <Filter>src</Filter>
     </ClInclude>
   </ItemGroup>

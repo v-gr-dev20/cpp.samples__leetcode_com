@@ -7,7 +7,7 @@ namespace testing {
 	auto CaseName = []() { return ::std::string( testing::UnitTest::GetInstance()->current_test_info()->test_case_name() ); };
 }
 
-TEST( leetcode_com__addTwoNumbers, EXPECT_EQ01 ) {
+TEST( leetcode_com__add_two_numbers, EXPECT_EQ01 ) {
 	const auto report {
 		::Run( GetSample( testing::CaseName() ), {
 			"2 4 3",
@@ -19,7 +19,7 @@ TEST( leetcode_com__addTwoNumbers, EXPECT_EQ01 ) {
 		} );
 }
 
-TEST( leetcode_com__fourSum, EXPECT_EQ01 ) {
+TEST( leetcode_com__4Sum, EXPECT_EQ01 ) {
 	const auto report {
 		::Run( GetSample( testing::CaseName() ), {
 			"1 0 -1 0 -2 2",
@@ -31,7 +31,7 @@ TEST( leetcode_com__fourSum, EXPECT_EQ01 ) {
 	} );
 }
 
-TEST( leetcode_com__fourSum, EXPECT_EQ02 ) {
+TEST( leetcode_com__4Sum, EXPECT_EQ02 ) {
 	const auto report {
 		::Run( GetSample( testing::CaseName() ), {
 			"2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2",
@@ -43,7 +43,7 @@ TEST( leetcode_com__fourSum, EXPECT_EQ02 ) {
 		} );
 }
 
-TEST( leetcode_com__divide, EXPECT_EQ01 ) {
+TEST( leetcode_com__divide_two_integers, EXPECT_EQ01 ) {
 	const auto report {
 		::Run( GetSample( testing::CaseName() ), {
 			"-2147483648",
@@ -55,7 +55,7 @@ TEST( leetcode_com__divide, EXPECT_EQ01 ) {
 		} );
 }
 
-TEST( leetcode_com__searchRange, EXPECT_EQ01 ) {
+TEST( leetcode_com__find_first_and_last_position_of_element_in_sorted_array, EXPECT_EQ01 ) {
 	const auto report {
 		::Run( GetSample( testing::CaseName() ), {
 			"1 2 3 3 3 3 4",
@@ -67,7 +67,7 @@ TEST( leetcode_com__searchRange, EXPECT_EQ01 ) {
 		} );
 }
 
-TEST( leetcode_com__findMedianSortedArrays, EXPECT_EQ01 ) {
+TEST( leetcode_com__median_of_two_sorted_arrays, EXPECT_EQ01 ) {
 	const auto report {
 		::Run( GetSample( testing::CaseName() ), {
 			"1 3",
@@ -79,7 +79,7 @@ TEST( leetcode_com__findMedianSortedArrays, EXPECT_EQ01 ) {
 		} );
 }
 
-TEST( leetcode_com__findMedianSortedArrays, EXPECT_EQ02 ) {
+TEST( leetcode_com__median_of_two_sorted_arrays, EXPECT_EQ02 ) {
 	const auto report {
 		::Run( GetSample( testing::CaseName() ), {
 			"1 2",
@@ -91,7 +91,7 @@ TEST( leetcode_com__findMedianSortedArrays, EXPECT_EQ02 ) {
 		} );
 }
 
-TEST( leetcode_com__findMedianSortedArrays, EXPECT_EQ03 ) {
+TEST( leetcode_com__median_of_two_sorted_arrays, EXPECT_EQ03 ) {
 	const auto report {
 		::Run( GetSample( testing::CaseName() ), {
 			"0 0",
@@ -103,7 +103,7 @@ TEST( leetcode_com__findMedianSortedArrays, EXPECT_EQ03 ) {
 		} );
 }
 
-TEST( leetcode_com__findMedianSortedArrays, EXPECT_EQ04 ) {
+TEST( leetcode_com__median_of_two_sorted_arrays, EXPECT_EQ04 ) {
 	const auto report {
 		::Run( GetSample( testing::CaseName() ), {
 			"1 2",
@@ -115,7 +115,7 @@ TEST( leetcode_com__findMedianSortedArrays, EXPECT_EQ04 ) {
 		} );
 }
 
-TEST( leetcode_com__findMedianSortedArrays, EXPECT_EQ05 ) {
+TEST( leetcode_com__median_of_two_sorted_arrays, EXPECT_EQ05 ) {
 	const auto report {
 		::Run( GetSample( testing::CaseName() ), {
 			"1 2",
@@ -127,7 +127,7 @@ TEST( leetcode_com__findMedianSortedArrays, EXPECT_EQ05 ) {
 		} );
 }
 
-TEST( leetcode_com__findMedianSortedArrays, EXPECT_EQ06 ) {
+TEST( leetcode_com__median_of_two_sorted_arrays, EXPECT_EQ06 ) {
 	const auto report {
 		::Run( GetSample( testing::CaseName() ), {
 			"2",
@@ -139,7 +139,7 @@ TEST( leetcode_com__findMedianSortedArrays, EXPECT_EQ06 ) {
 		} );
 }
 
-TEST( leetcode_com__findMedianSortedArrays, EXPECT_EQ07 ) {
+TEST( leetcode_com__median_of_two_sorted_arrays, EXPECT_EQ07 ) {
 	const auto report {
 		::Run( GetSample( testing::CaseName() ), {
 			"1",
@@ -151,7 +151,7 @@ TEST( leetcode_com__findMedianSortedArrays, EXPECT_EQ07 ) {
 		} );
 }
 
-TEST( leetcode_com__firstMissingPositive, EXPECT_EQ01 ) {
+TEST( leetcode_com__first_missing_positive, EXPECT_EQ01 ) {
 	const auto report {
 		::Run( GetSample( testing::CaseName() ), {
 			"1 1"
@@ -162,7 +162,7 @@ TEST( leetcode_com__firstMissingPositive, EXPECT_EQ01 ) {
 		} );
 }
 
-TEST( leetcode_com__firstMissingPositive, EXPECT_EQ02 ) {
+TEST( leetcode_com__first_missing_positive, EXPECT_EQ02 ) {
 	const auto report {
 		::Run( GetSample( testing::CaseName() ), {
 			"1 2 0" 
@@ -173,7 +173,7 @@ TEST( leetcode_com__firstMissingPositive, EXPECT_EQ02 ) {
 		} );
 }
 
-TEST( leetcode_com__firstMissingPositive, EXPECT_EQ03 ) {
+TEST( leetcode_com__first_missing_positive, EXPECT_EQ03 ) {
 	const auto report {
 		::Run( GetSample( testing::CaseName() ), {
 			"1 2 3 4 5 -3 7 8 -1"
@@ -184,7 +184,7 @@ TEST( leetcode_com__firstMissingPositive, EXPECT_EQ03 ) {
 		} );
 }
 
-TEST( leetcode_com__orderOfLargestPlusSign, EXPECT_EQ01 ) {
+TEST( leetcode_com__largest_plus_sign, EXPECT_EQ01 ) {
 	const auto report {
 		::Run( GetSample( testing::CaseName() ), {
 			"1",
@@ -196,7 +196,7 @@ TEST( leetcode_com__orderOfLargestPlusSign, EXPECT_EQ01 ) {
 		} );
 }
 
-TEST( leetcode_com__orderOfLargestPlusSign, EXPECT_EQ02 ) {
+TEST( leetcode_com__largest_plus_sign, EXPECT_EQ02 ) {
 	const auto report {
 		::Run( GetSample( testing::CaseName() ), {
 			"5",
@@ -208,7 +208,7 @@ TEST( leetcode_com__orderOfLargestPlusSign, EXPECT_EQ02 ) {
 		} );
 }
 
-TEST( leetcode_com__orderOfLargestPlusSign, EXPECT_EQ03 ) {
+TEST( leetcode_com__largest_plus_sign, EXPECT_EQ03 ) {
 	const auto report {
 		::Run( GetSample( testing::CaseName() ), {
 			"3",
@@ -220,7 +220,7 @@ TEST( leetcode_com__orderOfLargestPlusSign, EXPECT_EQ03 ) {
 		} );
 }
 
-TEST( leetcode_com__orderOfLargestPlusSign, EXPECT_EQ04 ) {
+TEST( leetcode_com__largest_plus_sign, EXPECT_EQ04 ) {
 	const auto report {
 		::Run( GetSample( testing::CaseName() ), {
 			"5",
@@ -232,7 +232,7 @@ TEST( leetcode_com__orderOfLargestPlusSign, EXPECT_EQ04 ) {
 		} );
 }
 
-TEST( leetcode_com__orderOfLargestPlusSign, EXPECT_EQ05 ) {
+TEST( leetcode_com__largest_plus_sign, EXPECT_EQ05 ) {
 	const auto report {
 		::Run( GetSample( testing::CaseName() ), {
 			"111",
@@ -244,7 +244,7 @@ TEST( leetcode_com__orderOfLargestPlusSign, EXPECT_EQ05 ) {
 		} );
 }
 
-TEST( leetcode_com__orderOfLargestPlusSign, EXPECT_EQ06 ) {
+TEST( leetcode_com__largest_plus_sign, EXPECT_EQ06 ) {
 	const auto report {
 		::Run( GetSample( testing::CaseName() ), {
 			"111",
@@ -256,7 +256,7 @@ TEST( leetcode_com__orderOfLargestPlusSign, EXPECT_EQ06 ) {
 		} );
 }
 
-TEST( leetcode_com__orderOfLargestPlusSign, EXPECT_EQ07 ) {
+TEST( leetcode_com__largest_plus_sign, EXPECT_EQ07 ) {
 	const auto report {
 		::Run( GetSample( testing::CaseName() ), {
 			"500",
@@ -268,7 +268,7 @@ TEST( leetcode_com__orderOfLargestPlusSign, EXPECT_EQ07 ) {
 		} );
 }
 
-TEST( leetcode_com__orderOfLargestPlusSign, EXPECT_EQ08 ) {
+TEST( leetcode_com__largest_plus_sign, EXPECT_EQ08 ) {
 	const auto report {
 		::Run( GetSample( testing::CaseName() ), {
 			"500", 
@@ -280,7 +280,7 @@ TEST( leetcode_com__orderOfLargestPlusSign, EXPECT_EQ08 ) {
 		} );
 }
 
-TEST( leetcode_com__numDistinct, EXPECT_EQ01 ) {
+TEST( leetcode_com__distinct_subsequences, EXPECT_EQ01 ) {
 	const auto report {
 		::Run( GetSample( testing::CaseName() ), {
 			"rabbbit",
@@ -292,7 +292,7 @@ TEST( leetcode_com__numDistinct, EXPECT_EQ01 ) {
 		} );
 }
 
-TEST( leetcode_com__numDistinct, EXPECT_EQ02 ) {
+TEST( leetcode_com__distinct_subsequences, EXPECT_EQ02 ) {
 	const auto report {
 		::Run( GetSample( testing::CaseName() ), {
 			"babgbag",
@@ -304,7 +304,7 @@ TEST( leetcode_com__numDistinct, EXPECT_EQ02 ) {
 		} );
 }
 
-TEST( leetcode_com__numDistinct, EXPECT_EQ03 ) {
+TEST( leetcode_com__distinct_subsequences, EXPECT_EQ03 ) {
 	const auto report {
 		::Run( GetSample( testing::CaseName() ), {
 			"adbdadeecadeadeccaeaabdabdbcdabddddabcaaadbabaaedeeddeaeebcdeabcaaaeeaeeabcddcebddebeebedaecccbdcbcedbdaeaedcdebeecdaaedaacadbdccabddaddacdddc"
@@ -316,7 +316,7 @@ TEST( leetcode_com__numDistinct, EXPECT_EQ03 ) {
 		} );
 }
 
-TEST( leetcode_com__numDistinct, EXPECT_EQ04 ) {
+TEST( leetcode_com__distinct_subsequences, EXPECT_EQ04 ) {
 	const auto report {
 		::Run( GetSample( testing::CaseName() ), {
 			"abc",
@@ -328,7 +328,7 @@ TEST( leetcode_com__numDistinct, EXPECT_EQ04 ) {
 		} );
 }
 
-TEST( leetcode_com__numDistinct, EXPECT_EQ05 ) {
+TEST( leetcode_com__distinct_subsequences, EXPECT_EQ05 ) {
 	const auto report {
 		::Run( GetSample( testing::CaseName() ), {
 			"aaabbaaaabbbaaaaba",
@@ -340,7 +340,7 @@ TEST( leetcode_com__numDistinct, EXPECT_EQ05 ) {
 		} );
 }
 
-TEST( leetcode_com__numDistinct, EXPECT_EQ06 ) {
+TEST( leetcode_com__distinct_subsequences, EXPECT_EQ06 ) {
 	const auto report {
 		::Run( GetSample( testing::CaseName() ), {
 			"aabcd",
@@ -352,7 +352,7 @@ TEST( leetcode_com__numDistinct, EXPECT_EQ06 ) {
 		} );
 }
 
-TEST( leetcode_com__numDistinct, EXPECT_EQ07 ) {
+TEST( leetcode_com__distinct_subsequences, EXPECT_EQ07 ) {
 	const auto report {
 		::Run( GetSample( testing::CaseName() ), {
 			"aaa",
@@ -364,7 +364,7 @@ TEST( leetcode_com__numDistinct, EXPECT_EQ07 ) {
 		} );
 }
 
-TEST( leetcode_com__shortestPath, EXPECT_EQ01 ) {
+TEST( leetcode_com__shortest_path_in_a_grid_with_obstacles_elimination, EXPECT_EQ01 ) {
 	const auto report {
 		::Run( GetSample( testing::CaseName() ), {
 			"1",
@@ -380,7 +380,7 @@ TEST( leetcode_com__shortestPath, EXPECT_EQ01 ) {
 		} );
 }
 
-TEST( leetcode_com__shortestPath, EXPECT_EQ02 ) {
+TEST( leetcode_com__shortest_path_in_a_grid_with_obstacles_elimination, EXPECT_EQ02 ) {
 	const auto report {
 		::Run( GetSample( testing::CaseName() ), {
 			"1",
@@ -394,7 +394,7 @@ TEST( leetcode_com__shortestPath, EXPECT_EQ02 ) {
 		} );
 }
 
-TEST( leetcode_com__shortestPath, EXPECT_EQ03 ) {
+TEST( leetcode_com__shortest_path_in_a_grid_with_obstacles_elimination, EXPECT_EQ03 ) {
 	const auto report {
 		::Run( GetSample( testing::CaseName() ), {
 			"4",
@@ -415,7 +415,7 @@ TEST( leetcode_com__shortestPath, EXPECT_EQ03 ) {
 		} );
 }
 
-TEST( leetcode_com__numIslands, EXPECT_EQ01 ) {
+TEST( leetcode_com__number_of_islands, EXPECT_EQ01 ) {
 	const auto report {
 		::Run( GetSample( testing::CaseName() ), {
 			"0 1 1",
@@ -428,7 +428,7 @@ TEST( leetcode_com__numIslands, EXPECT_EQ01 ) {
 		} );
 }
 
-TEST( leetcode_com__numIslands, EXPECT_EQ02 ) {
+TEST( leetcode_com__number_of_islands, EXPECT_EQ02 ) {
 	const auto report {
 		::Run( GetSample( testing::CaseName() ), {
 			"1 1 1 1 0",
@@ -442,7 +442,7 @@ TEST( leetcode_com__numIslands, EXPECT_EQ02 ) {
 		} );
 }
 
-TEST( leetcode_com__numIslands, EXPECT_EQ03 ) {
+TEST( leetcode_com__number_of_islands, EXPECT_EQ03 ) {
 	const auto report {
 		::Run( GetSample( testing::CaseName() ), {
 			"1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0",
@@ -502,7 +502,7 @@ TEST( leetcode_com__numIslands, EXPECT_EQ03 ) {
 		} );
 }
 
-TEST( leetcode_com__numIslands, EXPECT_EQ04 ) {
+TEST( leetcode_com__number_of_islands, EXPECT_EQ04 ) {
 	const auto report {
 		::Run( GetSample( testing::CaseName() ), {
 			"0"
@@ -513,7 +513,7 @@ TEST( leetcode_com__numIslands, EXPECT_EQ04 ) {
 		} );
 }
 
-TEST( leetcode_com__numIslands, EXPECT_EQ05 ) {
+TEST( leetcode_com__number_of_islands, EXPECT_EQ05 ) {
 	const auto report {
 		::Run( GetSample( testing::CaseName() ), {
 			"1"
@@ -524,7 +524,7 @@ TEST( leetcode_com__numIslands, EXPECT_EQ05 ) {
 		} );
 }
 
-TEST( leetcode_com__numIslands, EXPECT_EQ06 ) {
+TEST( leetcode_com__number_of_islands, EXPECT_EQ06 ) {
 	const auto report {
 		::Run( GetSample( testing::CaseName() ), {
 			"1 0 1 0 1"
@@ -535,7 +535,7 @@ TEST( leetcode_com__numIslands, EXPECT_EQ06 ) {
 		} );
 }
 
-TEST( leetcode_com__numIslands, EXPECT_EQ07 ) {
+TEST( leetcode_com__number_of_islands, EXPECT_EQ07 ) {
 	const auto report {
 		::Run( GetSample( testing::CaseName() ), {
 			"1 0",
@@ -561,7 +561,7 @@ TEST( leetcode_com__palindromic_substrings, EXPECT_EQ01 ) {
 		} );
 }
 
-TEST( leetcode_com__subarraySum, EXPECT_EQ01 ) {
+TEST( leetcode_com__subarray_sum_equals_k, EXPECT_EQ01 ) {
 	const auto report {
 		::Run( GetSample( testing::CaseName() ), {
 			"0 0 0 0 0 0 0 0 0 0",
@@ -573,7 +573,7 @@ TEST( leetcode_com__subarraySum, EXPECT_EQ01 ) {
 		} );
 }
 
-TEST( leetcode_com__subarraySum, EXPECT_EQ02 ) {
+TEST( leetcode_com__subarray_sum_equals_k, EXPECT_EQ02 ) {
 	const auto report {
 		::Run( GetSample( testing::CaseName() ), {
 			"1 1 1",
@@ -585,7 +585,7 @@ TEST( leetcode_com__subarraySum, EXPECT_EQ02 ) {
 		} );
 }
 
-TEST( leetcode_com__subarraySum, EXPECT_EQ03 ) {
+TEST( leetcode_com__subarray_sum_equals_k, EXPECT_EQ03 ) {
 	const auto report {
 		::Run( GetSample( testing::CaseName() ), {
 			"1 2 3",
@@ -597,7 +597,7 @@ TEST( leetcode_com__subarraySum, EXPECT_EQ03 ) {
 		} );
 }
 
-TEST( leetcode_com__findMin, EXPECT_EQ01 ) {
+TEST( leetcode_com__find_minimum_in_rotated_sorted_array_ii, EXPECT_EQ01 ) {
 	const auto report {
 		::Run( GetSample( testing::CaseName() ), {
 			"1 3 5"
@@ -608,7 +608,7 @@ TEST( leetcode_com__findMin, EXPECT_EQ01 ) {
 		} );
 }
 
-TEST( leetcode_com__findMin, EXPECT_EQ02 ) {
+TEST( leetcode_com__find_minimum_in_rotated_sorted_array_ii, EXPECT_EQ02 ) {
 	const auto report {
 		::Run( GetSample( testing::CaseName() ), {
 			"2 2 2 0 1"
@@ -619,7 +619,7 @@ TEST( leetcode_com__findMin, EXPECT_EQ02 ) {
 		} );
 }
 
-TEST( leetcode_com__findMin, EXPECT_EQ03 ) {
+TEST( leetcode_com__find_minimum_in_rotated_sorted_array_ii, EXPECT_EQ03 ) {
 	const auto report {
 		::Run( GetSample( testing::CaseName() ), {
 			"0 0 0 0 0 0 0 0 1 0"
