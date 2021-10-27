@@ -1,16 +1,39 @@
 // 4. Median of Two Sorted Arrays
+// Hard
+// https://leetcode.com/problems/median-of-two-sorted-arrays/
 // There are two sorted arrays nums1 and nums2 of size m and n respectively.
 // Find the median of the two sorted arrays.The overall run time complexity should be O(log(m + n)).
 // You may assume nums1 and nums2 cannot be both empty.
+//
 // Example 1:
 // nums1 = [1, 3]
 // nums2 = [2]
 // The median is 2.0
+//
 // Example 2:
 // nums1 = [1, 2]
 // nums2 = [3, 4]
 // The median is (2 + 3) / 2 = 2.5
-// https://leetcode.com/problems/median-of-two-sorted-arrays
+//
+// Example 3:
+// Input: nums1 = [0, 0], nums2 = [0, 0]
+// Output : 0.00000
+//
+// Example 4 :
+// 	Input : nums1 = [], nums2 = [1]
+// 	Output : 1.00000
+//
+// 	Example 5 :
+// 	Input : nums1 = [2], nums2 = []
+// 	Output : 2.00000
+//
+// 	Constraints :
+// 	nums1.length == m
+// 	nums2.length == n
+// 	0 <= m <= 1000
+// 	0 <= n <= 1000
+// 	1 <= m + n <= 2000
+// 	- 10^6 <= nums1[i], nums2[i] <= 10^6
 
 #include "pch.h"
 #include "leetcode_com__findMedianSortedArrays.h"
