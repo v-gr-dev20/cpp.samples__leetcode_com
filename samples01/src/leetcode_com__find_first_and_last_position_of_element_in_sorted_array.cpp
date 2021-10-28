@@ -38,3 +38,10 @@ void LeetcodeCom_Problems::CFindFirstAndLastPositionOfElementInSortedArray::Repo
 	}
 	reportLines.push_back( "Result: { " + resultStream.str() + " }" );
 }
+
+void LeetcodeCom_Problems::CFindFirstAndLastPositionOfElementInSortedArray::Clean()
+{
+	nums.clear();
+	int target;
+	result.clear();
+}

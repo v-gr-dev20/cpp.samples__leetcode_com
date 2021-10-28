@@ -37,3 +37,9 @@ void LeetcodeCom_Problems::CNumberOfIslands::Report( std::vector<std::string>& r
 	reportLines.clear();
 	reportLines.push_back( "Result: " + std::to_string( result ) );
 }
+
+void LeetcodeCom_Problems::CNumberOfIslands::Clean()
+{
+	grid.clear();
+	result = 0;
+}

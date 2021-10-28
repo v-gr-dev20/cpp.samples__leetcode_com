@@ -33,3 +33,10 @@ void LeetcodeCom_Problems::CMedianOfTwoSortedArrays::Report( std::vector<std::st
 	reportLines.clear();
 	reportLines.push_back( "Result: " + std::to_string( result ) );
 }
+
+void LeetcodeCom_Problems::CMedianOfTwoSortedArrays::Clean()
+{
+	nums1.clear();
+	nums2.clear();
+	result = 0;
+}

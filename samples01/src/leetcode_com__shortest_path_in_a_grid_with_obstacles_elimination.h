@@ -14,6 +14,7 @@ public:
 	virtual void Input( std::istream&, std::ostream& ) override;
 	virtual void Run() override;
 	virtual void Report( std::vector<std::string>& reportLines ) const override;
+	virtual void Clean() override;
 private:
 	// https://leetcode.com/problems/shortest-path-in-a-grid-with-obstacles-elimination/
 	// You are given an m x n integer matrix grid where each cell is either 0 (empty) or 1 (obstacle).

@@ -31,3 +31,10 @@ void LeetcodeCom_Problems::CDivideTwoIntegers::Report( std::vector<std::string>&
 	reportLines.clear();
 	reportLines.push_back( "Result: " + std::to_string( result ) );
 }
+
+void LeetcodeCom_Problems::CDivideTwoIntegers::Clean()
+{
+	dividend = 0;
+	divisor = 0;
+	result = 0;
+}

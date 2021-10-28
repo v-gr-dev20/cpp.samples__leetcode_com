@@ -14,6 +14,7 @@ public:
 	virtual void Input( std::istream&, std::ostream& ) override;
 	virtual void Run() override;
 	virtual void Report( std::vector<std::string>& reportLines ) const override;
+	virtual void Clean() override;
 private:
 	// https://leetcode.com/problems/largest-plus-sign/
 	// You are given an integer n. You have an n x n binary grid grid with all values initially 1's except for some indices

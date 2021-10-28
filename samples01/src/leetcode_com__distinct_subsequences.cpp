@@ -31,3 +31,10 @@ void LeetcodeCom_Problems::CDistinctSubsequences::Report( std::vector<std::strin
 	reportLines.clear();
 	reportLines.push_back( "Result: " + std::to_string( result ) );
 }
+
+void LeetcodeCom_Problems::CDistinctSubsequences::Clean()
+{
+	s.clear();
+	t.clear();
+	result = 0;
+}

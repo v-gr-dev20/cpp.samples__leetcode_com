@@ -42,3 +42,10 @@ void LeetcodeCom_Problems::C4Sum::Report( std::vector<std::string>& reportLines 
 	resultStr = "[ " + resultStr + " ]";
 	reportLines.push_back( "Result: " + resultStr );
 }
+
+void LeetcodeCom_Problems::C4Sum::Clean()
+{
+	nums.clear();
+	target = 0;
+	result.clear();
+}

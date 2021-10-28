@@ -14,6 +14,7 @@ public:
 	virtual void Input( std::istream&, std::ostream& ) override;
 	virtual void Run() override;
 	virtual void Report( std::vector<std::string>& reportLines ) const override;
+	virtual void Clean() override;
 private:
 	// https://leetcode.com/problems/divide-two-integers/
 	// Given two integers dividend and divisor, divide two integers without using multiplication, division and mod operator.

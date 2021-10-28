@@ -30,3 +30,9 @@ void LeetcodeCom_Problems::CFirstMissingPositive::Report( std::vector<std::strin
 	reportLines.clear();
 	reportLines.push_back( "Result: " + std::to_string( result ) );
 }
+
+void LeetcodeCom_Problems::CFirstMissingPositive::Clean()
+{
+	nums.clear();
+	result = 0;
+}

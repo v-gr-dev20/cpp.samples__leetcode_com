@@ -14,6 +14,7 @@ public:
 	virtual void Input( std::istream&, std::ostream& ) override;
 	virtual void Run() override;
 	virtual void Report( std::vector<std::string>& reportLines ) const override;
+	virtual void Clean() override;
 private:
 	// https://leetcode.com/problems/find-first-and-last-position-of-element-in-sorted-array/
 	// Given an array of integers nums sorted in ascending order, find the startingand ending position of a given target value.

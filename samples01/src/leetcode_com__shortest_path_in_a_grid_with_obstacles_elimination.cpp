@@ -41,3 +41,10 @@ void LeetcodeCom_Problems::CShortestPathInAGridWithObstaclesElimination::Report(
 	reportLines.clear();
 	reportLines.push_back( "Result: " + std::to_string( result ) );
 }
+
+void LeetcodeCom_Problems::CShortestPathInAGridWithObstaclesElimination::Clean()
+{
+	k = 0;
+	grid.clear();
+	result = 0;
+}

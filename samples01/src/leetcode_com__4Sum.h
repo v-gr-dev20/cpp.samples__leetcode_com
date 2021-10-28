@@ -14,6 +14,7 @@ public:
 	virtual void Input( std::istream&, std::ostream& ) override;
 	virtual void Run() override;
 	virtual void Report( std::vector<std::string>& reportLines ) const override;
+	virtual void Clean() override;
 private:
 	// https://leetcode.com/problems/4sum/
 	// Given an array nums of n integers, return an array of all the unique quadruplets [nums[a], nums[b], nums[c], nums[d]]

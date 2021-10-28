@@ -43,3 +43,10 @@ void LeetcodeCom_Problems::CLargestPlusSign::Report( std::vector<std::string>& r
 	reportLines.clear();
 	reportLines.push_back( "Result: " + std::to_string( result ) );
 }
+
+void LeetcodeCom_Problems::CLargestPlusSign::Clean()
+{
+	n = 0;
+	mines.clear();
+	result = 0;
+}

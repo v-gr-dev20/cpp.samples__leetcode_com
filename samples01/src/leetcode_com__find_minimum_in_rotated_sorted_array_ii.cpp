@@ -9,6 +9,7 @@
 namespace {
 LeetcodeCom_Problems::CFindMinimumInRotatedSortedArrayII problem;
 } // namespace
+
 LeetcodeCom_Problems::CFindMinimumInRotatedSortedArrayII::CFindMinimumInRotatedSortedArrayII()
 	: CBaseSample( "leetcode_com__find_minimum_in_rotated_sorted_array_ii" )
 {
@@ -33,4 +34,5 @@ void LeetcodeCom_Problems::CFindMinimumInRotatedSortedArrayII::Report( std::vect
 void LeetcodeCom_Problems::CFindMinimumInRotatedSortedArrayII::Clean()
 {
 	nums.clear();
+	result = 0;
 }
