@@ -10,40 +10,79 @@
     <ClCompile Include="..\main.cpp" />
     <ClCompile Include="..\tests.cpp" />
     <ClCompile Include="..\pch.cpp" />
-    <ClCompile Include="..\..\src\leetcode_com__palindromic_substrings.cpp">
-      <Filter>src</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\src\leetcode_com__add_two_numbers.cpp">
-      <Filter>src</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\src\leetcode_com__divide_two_integers.cpp">
-      <Filter>src</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\src\leetcode_com__median_of_two_sorted_arrays.cpp">
-      <Filter>src</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\src\leetcode_com__find_minimum_in_rotated_sorted_array_ii.cpp">
-      <Filter>src</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\src\leetcode_com__first_missing_positive.cpp">
+    <ClCompile Include="..\..\src\leetcode_com__4Sum__solution.cpp">
       <Filter>src</Filter>
     </ClCompile>
     <ClCompile Include="..\..\src\leetcode_com__4Sum.cpp">
       <Filter>src</Filter>
     </ClCompile>
+    <ClCompile Include="..\..\src\leetcode_com__add_two_numbers__solution.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\leetcode_com__add_two_numbers.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\leetcode_com__distinct_subsequences__solution.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
     <ClCompile Include="..\..\src\leetcode_com__distinct_subsequences.cpp">
       <Filter>src</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\src\leetcode_com__number_of_islands.cpp">
+    <ClCompile Include="..\..\src\leetcode_com__divide_two_integers__solution.cpp">
       <Filter>src</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\src\leetcode_com__largest_plus_sign.cpp">
+    <ClCompile Include="..\..\src\leetcode_com__divide_two_integers.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\leetcode_com__find_first_and_last_position_of_element_in_sorted_array__solution.cpp">
       <Filter>src</Filter>
     </ClCompile>
     <ClCompile Include="..\..\src\leetcode_com__find_first_and_last_position_of_element_in_sorted_array.cpp">
       <Filter>src</Filter>
     </ClCompile>
+    <ClCompile Include="..\..\src\leetcode_com__find_minimum_in_rotated_sorted_array_ii__solution.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\leetcode_com__find_minimum_in_rotated_sorted_array_ii.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\leetcode_com__first_missing_positive__solution.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\leetcode_com__first_missing_positive.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\leetcode_com__largest_plus_sign__solution.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\leetcode_com__largest_plus_sign.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\leetcode_com__median_of_two_sorted_arrays__solution.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\leetcode_com__median_of_two_sorted_arrays.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\leetcode_com__number_of_islands__solution.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\leetcode_com__number_of_islands.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\leetcode_com__palindromic_substrings__solution.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\leetcode_com__palindromic_substrings.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\leetcode_com__shortest_path_in_a_grid_with_obstacles_elimination__solution.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
     <ClCompile Include="..\..\src\leetcode_com__shortest_path_in_a_grid_with_obstacles_elimination.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\leetcode_com__subarray_sum_equals_k__solution.cpp">
       <Filter>src</Filter>
     </ClCompile>
     <ClCompile Include="..\..\src\leetcode_com__subarray_sum_equals_k.cpp">
