@@ -10,10 +10,10 @@ namespace LeetcodeCom_Problems {
 class CFindFirstAndLastPositionOfElementInSortedArray : public CBaseSample {
 public:
 	CFindFirstAndLastPositionOfElementInSortedArray();
+	virtual ~CFindFirstAndLastPositionOfElementInSortedArray() override;
 	virtual void Input( std::istream&, std::ostream& ) override;
 	virtual void Run() override;
 	virtual void Report( std::vector<std::string>& reportLines ) const override;
-	virtual ~CFindFirstAndLastPositionOfElementInSortedArray() override;
 private:
 	std::vector<int> numbers;
 	int target;

@@ -10,10 +10,10 @@ namespace LeetcodeCom_Problems {
 class CFirstMissingPositive : public CBaseSample {
 public:
 	CFirstMissingPositive();
+	virtual ~CFirstMissingPositive() override;
 	virtual void Input( std::istream&, std::ostream& ) override;
 	virtual void Run() override;
 	virtual void Report( std::vector<std::string>& reportLines ) const override;
-	virtual ~CFirstMissingPositive() override;
 private:
 	std::vector<int> v;
 	int result;

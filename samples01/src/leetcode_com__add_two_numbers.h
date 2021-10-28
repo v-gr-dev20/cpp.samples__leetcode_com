@@ -10,10 +10,10 @@ namespace LeetcodeCom_Problems {
 class CAddTwoNumbers : public CBaseSample {
 public:
 	CAddTwoNumbers();
+	virtual ~CAddTwoNumbers() override;
 	virtual void Input( std::istream&, std::ostream& ) override;
 	virtual void Run() override;
 	virtual void Report( std::vector<std::string>& reportLines ) const override;
-	virtual ~CAddTwoNumbers() override;
 	struct ListNode {
 		int val;
 		ListNode* next;
