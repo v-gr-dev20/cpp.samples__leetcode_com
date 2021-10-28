@@ -102,12 +102,12 @@ LeetcodeCom_Problems::CFirstMissingPositive::~CFirstMissingPositive()
 void LeetcodeCom_Problems::CFirstMissingPositive::Input( istream& iStream, ostream& oStream )
 {
 	oStream << "Input numbers: ";
-	v = Tools::InputNumbers( iStream );
+	nums = Tools::InputNumbers( iStream );
 }
 
 void LeetcodeCom_Problems::CFirstMissingPositive::Run()
 {
-	result = Solution().firstMissingPositive( v );
+	result = Solution().firstMissingPositive( nums );
 }
 
 void LeetcodeCom_Problems::CFirstMissingPositive::Report( vector<string>& reportLines ) const

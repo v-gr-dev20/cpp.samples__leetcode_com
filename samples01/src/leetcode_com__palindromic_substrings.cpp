@@ -102,12 +102,12 @@ void LeetcodeCom_Problems::CPalindromicSubstrings::Input( istream& iStream, ostr
 {
 	Clean();
 	oStream << "Input zero: ";
-	iStream >> input;
+	iStream >> s;
 }
 
 void LeetcodeCom_Problems::CPalindromicSubstrings::Run()
 {
-	result = Solution().countSubstrings(input);
+	result = Solution().countSubstrings( s );
 }
 
 void LeetcodeCom_Problems::CPalindromicSubstrings::Report( vector<string>& reportLines ) const
@@ -118,6 +118,6 @@ void LeetcodeCom_Problems::CPalindromicSubstrings::Report( vector<string>& repor
 
 void LeetcodeCom_Problems::CPalindromicSubstrings::Clean()
 {
-	input.clear();
+	s.clear();
 	result = 0;
 }

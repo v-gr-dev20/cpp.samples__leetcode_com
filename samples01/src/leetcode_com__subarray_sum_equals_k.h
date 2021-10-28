@@ -16,8 +16,10 @@ public:
 	virtual void Report( std::vector<std::string>& reportLines ) const override;
 	virtual void Clean() override;
 private:
+	// https://leetcode.com/problems/subarray-sum-equals-k
+	// Given an array of integers nums and an integer k, return the total number of continuous subarrays whose k equals to k.
 	std::vector<int> nums;
-	int sum;
+	int k;
 	int result;
 };
 } // namespace LeetcodeCom_Problems

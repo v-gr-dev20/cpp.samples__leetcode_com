@@ -103,14 +103,14 @@ LeetcodeCom_Problems::CFindFirstAndLastPositionOfElementInSortedArray::~CFindFir
 void LeetcodeCom_Problems::CFindFirstAndLastPositionOfElementInSortedArray::Input( istream& iStream, ostream& oStream )
 {
 	oStream << "Input numbers: ";
-	numbers = Tools::InputNumbers( iStream );
+	nums = Tools::InputNumbers( iStream );
 	oStream << "Input target: ";
 	iStream >> target;
 }
 
 void LeetcodeCom_Problems::CFindFirstAndLastPositionOfElementInSortedArray::Run()
 {
-	result = Solution().searchRange( numbers, target );
+	result = Solution().searchRange( nums, target );
 }
 
 void LeetcodeCom_Problems::CFindFirstAndLastPositionOfElementInSortedArray::Report( vector<string>& reportLines ) const

@@ -16,7 +16,9 @@ public:
 	virtual void Report( std::vector<std::string>& reportLines ) const override;
 	virtual void Clean() override;
 private:
-	std::string input;
+	// https://leetcode.com/problems/palindromic-substrings/
+	// Given a string s, return the number of palindromic substrings in it.
+	std::string s;
 	int result;
 };
 } // namespace LeetcodeCom_Problems

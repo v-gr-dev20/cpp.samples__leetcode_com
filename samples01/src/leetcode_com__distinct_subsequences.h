@@ -15,6 +15,8 @@ public:
 	virtual void Run() override;
 	virtual void Report( std::vector<std::string>& reportLines ) const override;
 private:
+	// https://leetcode.com/problems/distinct-subsequences/
+	// Given two strings s and t, return the number of distinct subsequences of s which equals t.
 	std::string s;
 	std::string t;
 	int result;

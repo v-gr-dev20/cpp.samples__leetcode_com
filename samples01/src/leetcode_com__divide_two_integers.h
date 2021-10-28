@@ -15,6 +15,9 @@ public:
 	virtual void Run() override;
 	virtual void Report( std::vector<std::string>& reportLines ) const override;
 private:
+	// https://leetcode.com/problems/divide-two-integers/
+	// Given two integers dividend and divisor, divide two integers without using multiplication, division and mod operator.
+	// Return the quotient after dividing dividend by divisor.
 	int dividend;
 	int divisor;
 	int result;

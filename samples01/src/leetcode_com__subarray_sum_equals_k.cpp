@@ -66,12 +66,12 @@ void LeetcodeCom_Problems::CSubarraySumEqualsK::Input( istream& iStream, ostream
 	nums = Tools::InputNumbers(iStream);
 
 	oStream << "Input sum: ";
-	iStream >> sum;
+	iStream >> k;
 }
 
 void LeetcodeCom_Problems::CSubarraySumEqualsK::Run()
 {
-	result = Solution().subarraySum(nums, sum);
+	result = Solution().subarraySum( nums, k );
 }
 
 void LeetcodeCom_Problems::CSubarraySumEqualsK::Report( vector<string>& reportLines ) const
@@ -83,6 +83,6 @@ void LeetcodeCom_Problems::CSubarraySumEqualsK::Report( vector<string>& reportLi
 void LeetcodeCom_Problems::CSubarraySumEqualsK::Clean()
 {
 	nums.clear();
-	sum = 0;
+	k = 0;
 	result = 0;
 }

@@ -15,8 +15,11 @@ public:
 	virtual void Run() override;
 	virtual void Report( std::vector<std::string>& reportLines ) const override;
 private:
-	std::vector<int> v1;
-	std::vector<int> v2;
+	// https://leetcode.com/problems/median-of-two-sorted-arrays/
+	// There are two sorted arrays nums1 and nums2 of size m and n respectively.
+	// Find the median of the two sorted arrays.The overall run time complexity should be O(log(m + n)).
+	std::vector<int> nums1;
+	std::vector<int> nums2;
 	double result;
 };
 } // namespace LeetcodeCom_Problems

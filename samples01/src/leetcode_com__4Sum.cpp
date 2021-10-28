@@ -42,21 +42,21 @@ public:
 };
 } // namespace
 
-vector<vector<int>> Solution::fourSum( vector<int>& nums, int target4 )
+vector<vector<int>> Solution::fourSum( vector<int>& nums, int target )
 {
 	sort( nums.begin(), nums.end() );
 	vector<vector<int>> result;
 	const int N = static_cast<int>( nums.size() );
 	vector<int> quadruplet( 4 );
 	for( int i = 0; i < N-3; ++i ) {
-		if( target4 / 4 < nums[i] ) {
+		if( target / 4 < nums[i] ) {
 			break;
 		}
 		if( 0 < i && nums[i-1] == nums[i] ) {
 			continue;
 		}
 		quadruplet[0] = nums[i];
-		int target3 = target4 - quadruplet[0];
+		int target3 = target - quadruplet[0];
 		for( int j = i+1; j < N-2; ++j ) {
 			if( target3 / 3 < nums[j] ) {
 				break;
@@ -108,13 +108,13 @@ LeetcodeCom_Problems::C4Sum::~C4Sum()
 void LeetcodeCom_Problems::C4Sum::Input( istream& iStream, ostream& oStream )
 {
 	oStream << "Input numbers: ";
-	numbers = Tools::InputNumbers( iStream );
-	iStream >> targetSum;
+	nums = Tools::InputNumbers( iStream );
+	iStream >> target;
 }
 
 void LeetcodeCom_Problems::C4Sum::Run()
 {
-	result = Solution().fourSum( numbers, targetSum );
+	result = Solution().fourSum( nums, target );
 }
 
 void LeetcodeCom_Problems::C4Sum::Report( vector<string>& reportLines ) const

@@ -15,7 +15,9 @@ public:
 	virtual void Run() override;
 	virtual void Report( std::vector<std::string>& reportLines ) const override;
 private:
-	std::vector<int> numbers;
+	// https://leetcode.com/problems/find-first-and-last-position-of-element-in-sorted-array/
+	// Given an array of integers nums sorted in ascending order, find the startingand ending position of a given target value.
+	std::vector<int> nums;
 	int target;
 	std::vector<int> result;
 };

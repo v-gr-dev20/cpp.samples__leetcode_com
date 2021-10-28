@@ -15,7 +15,9 @@ public:
 	virtual void Run() override;
 	virtual void Report( std::vector<std::string>& reportLines ) const override;
 private:
-	std::vector<int> v;
+	// https://leetcode.com/problems/first-missing-positive/
+	// Given an unsorted integer array, find the smallest missing positive integer.
+	std::vector<int> nums;
 	int result;
 };
 } // namespace LeetcodeCom_Problems
