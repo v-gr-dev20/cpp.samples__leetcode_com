@@ -27,7 +27,7 @@ function main( [Parameter( Position = 0 )][string] $thisScriptPath, [Parameter( 
 	$paramsToString = ( convertToStringWithQuotas $commandLineArgs )
 	
 	# Запускаем систему сборки для проекта
-	bash -c "docker run --rm -t -v '${projectMountPoint}':/sources gtest bash -c '/sources/${projectName}/${thisScriptDirName}/${thisScriptShortName}.sh $paramsToString'"
+	bash -c "docker run --rm -t -v '${projectMountPoint}':/sources gtest bash /sources/${projectName}/${thisScriptDirName}/${thisScriptShortName}.sh $paramsToString"
 }
 
 # Преобразует путь вида "C:\Parent\Dir\file" в "/mnt/c/Parent/Dir/file"
