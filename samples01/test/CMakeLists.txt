@@ -55,6 +55,9 @@ set(src
     "../src/leetcode_com__subarray_sum_equals_k.cpp"
     "../src/leetcode_com__subarray_sum_equals_k.h"
     "../src/leetcode_com__subarray_sum_equals_k__solution.cpp"
+    "../src/new_sample.cpp"
+    "../src/new_sample.h"
+    "../src/new_sample_solution.cpp"
 )
 
 set(ALL_FILES

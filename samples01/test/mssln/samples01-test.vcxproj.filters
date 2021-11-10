@@ -88,6 +88,12 @@
     <ClCompile Include="..\..\src\leetcode_com__subarray_sum_equals_k.cpp">
       <Filter>src</Filter>
     </ClCompile>
+    <ClCompile Include="..\..\src\new_sample.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\new_sample_solution.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\pch.h" />
@@ -146,6 +152,9 @@
       <Filter>src</Filter>
     </ClInclude>
     <ClInclude Include="..\..\src\leetcode_com__subarray_sum_equals_k.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\new_sample.h">
       <Filter>src</Filter>
     </ClInclude>
   </ItemGroup>

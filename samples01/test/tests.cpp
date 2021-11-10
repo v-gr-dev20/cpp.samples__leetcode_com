@@ -7,6 +7,17 @@ namespace testing {
 	auto CaseName = []() { return ::std::string( testing::UnitTest::GetInstance()->current_test_info()->test_case_name() ); };
 }
 
+TEST( new_sample, EXPECT_EQ01 ) {
+	const auto report {
+		::Run( GetSample( testing::CaseName() ), {
+			"Hello"
+			} )
+	};
+	EXPECT_EQ( report, decltype( report ) {
+		"Result: Hello, " + testing::CaseName()
+		} );
+}
+
 TEST( leetcode_com__add_two_numbers, EXPECT_EQ01 ) {
 	const auto report {
 		::Run( GetSample( testing::CaseName() ), {

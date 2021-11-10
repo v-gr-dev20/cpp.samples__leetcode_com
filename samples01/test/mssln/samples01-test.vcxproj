@@ -52,6 +52,7 @@
     <ClInclude Include="..\..\src\leetcode_com__palindromic_substrings.h" />
     <ClInclude Include="..\..\src\leetcode_com__shortest_path_in_a_grid_with_obstacles_elimination.h" />
     <ClInclude Include="..\..\src\leetcode_com__subarray_sum_equals_k.h" />
+    <ClInclude Include="..\..\src\new_sample.h" />
     <ClInclude Include="..\pch.h" />
   </ItemGroup>
   <ItemGroup>
@@ -83,6 +84,8 @@
     <ClCompile Include="..\..\src\leetcode_com__shortest_path_in_a_grid_with_obstacles_elimination.cpp" />
     <ClCompile Include="..\..\src\leetcode_com__subarray_sum_equals_k__solution.cpp" />
     <ClCompile Include="..\..\src\leetcode_com__subarray_sum_equals_k.cpp" />
+    <ClCompile Include="..\..\src\new_sample.cpp" />
+    <ClCompile Include="..\..\src\new_sample_solution.cpp" />
     <ClCompile Include="..\main.cpp" />
     <ClCompile Include="..\tests.cpp" />
     <ClCompile Include="..\pch.cpp">
