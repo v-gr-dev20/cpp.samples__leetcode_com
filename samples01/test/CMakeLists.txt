@@ -69,7 +69,7 @@ enable_testing()
 add_executable(${PROJECT_NAME} ${ALL_FILES})
 if( WIN32 )
     file(TO_CMAKE_PATH "$ENV{APPDATA}" APPDATA)
-    target_link_libraries(${PROJECT_NAME} PRIVATE "${APPDATA}/NuGet/packages/Microsoft.googletest.v140.windesktop.msvcstl.static.rt-dyn.1.8.1.3/build/native/Microsoft.googletest.v140.windesktop.msvcstl.static.rt-dyn.targets")
+    target_link_libraries(${PROJECT_NAME} PRIVATE "${APPDATA}/NuGet/packages/Microsoft.googletest.v140.windesktop.msvcstl.static.rt-dyn.1.8.1.5/build/native/Microsoft.googletest.v140.windesktop.msvcstl.static.rt-dyn.targets")
 else()
     find_package(GTest REQUIRED)
     target_link_libraries(${PROJECT_NAME} PRIVATE GTest::GTest GTest::Main)
@@ -79,7 +79,6 @@ target_include_directories(${PROJECT_NAME} PUBLIC
     "${CMAKE_CURRENT_SOURCE_DIR}/../src;"
     "${CMAKE_CURRENT_SOURCE_DIR}/../test;"
     "${CMAKE_CURRENT_SOURCE_DIR}/../../common;"
-    "${GTEST_INCLUDE_DIRS}"
 )
 set_target_properties(
 	${PROJECT_NAME} PROPERTIES
