@@ -10,7 +10,8 @@
 [ Из чего состоит ](#consist)\
 [ Как воспроизвести результаты на leetcode.com ](#leetcode)\
 [ Как развернуть и воспроизвести результаты в Windows ](#windows)\
-[ Как развернуть и воспроизвести результаты в linux ](#linux)
+[ Как развернуть и воспроизвести результаты в linux ](#linux)\
+[ Как посмотреть на готовую сборку и результаты тестов ](#build)
 
 <a id="goals"></a>
 ### Цели
@@ -67,3 +68,7 @@ mkdir demo \
 && bash demo/samples01/scripts/build-Linux.sh
 ```
 При этом ожидается старт процесса сборки проекта, после чего следует выполнение целевой программы с выводом в консоли результатов тестов в формате gtest.
+
+<a id="build"></a>
+### Как посмотреть на готовую сборку и результаты тестов для разных платформ
+[![Build status](https://ci.appveyor.com/api/projects/status/j1t6h0x4o1cywss7?svg=true)](https://ci.appveyor.com/project/v-gr-dev20/cpp-samples-leetcode-com)

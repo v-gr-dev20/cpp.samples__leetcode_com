@@ -1,0 +1,56 @@
+version: 1.0.{build}
+image:
+  - Visual Studio 2019
+  - Ubuntu
+branches:
+  only:
+  - dev
+configuration:
+  - Debug
+  - Release
+platform: x64
+environment:
+  matrix:
+  - BUILDER: MSBuilder
+    HOST_OR_DOCKER: host
+  - BUILDER: CMake
+    HOST_OR_DOCKER: docker
+
+matrix:
+  fast_finish: true
+  exclude:
+    - image: Visual Studio 2019
+      HOST_OR_DOCKER: docker
+    - image: Ubuntu
+      BUILDER: MSBuilder
+
+init:
+  - appveyor version
+
+for:
+
+  - matrix:
+      only:
+      - image: Visual Studio 2019
+        BUILDER: MSBuilder
+
+    install:
+    - pwsh: |
+            # installation of prerequisites: gtest
+            nuget restore mssln -PackagesDirectory ../external/packages
+            # cleaning, without which the build will not work
+            rm -r samples01/test/mssln/obj
+
+    build_script:
+    - pwsh: msbuild "mssln/samples__leetcode_com.sln" /verbosity:minimal /logger:"C:\Program Files\AppVeyor\BuildAgent\Appveyor.MSBuildLogger.dll"
+    test_script:
+    - pwsh: |
+            [string]$target = "./mssln/$env:PLATFORM/$env:CONFIGURATION/samples01-test.exe"
+            Start-Process -NoNewWindow -FilePath "$target" -ArgumentList '--gtest_color=yes'
+
+  - matrix:
+      only:
+      - image: Ubuntu
+        HOST_OR_DOCKER: docker
+    build_script:
+    - sh: bash samples01/scripts/build-Linux.sh $CONFIGURATION
