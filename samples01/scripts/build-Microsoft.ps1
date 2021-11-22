@@ -28,10 +28,13 @@ function main( [Parameter( Position = 0 )][string] $thisScriptPath, [Parameter( 
 
 	# Запускаем сборку проекта
 	&{
-		Push-Location "$buildDirPath" `
-		&& cmake -DCMAKE_BUILD_TYPE=$buildType .. `
-		&& cmake --build . --config $buildType
-
+		Push-Location "$buildDirPath" > $null 2> $null
+		if( $? ) {
+			cmake -DCMAKE_BUILD_TYPE=$buildType ..
+		}
+		if( $? ) {
+			cmake --build . --config $buildType
+		}
 		Pop-Location
 	}
 }

@@ -23,8 +23,6 @@ matrix:
   exclude:
     - image: Visual Studio 2019
       HOST_OR_DOCKER: docker
-    - image: Visual Studio 2019
-      BUILDER: CMake
     - image: Ubuntu
       BUILDER: MSBuilder
 
@@ -51,6 +49,22 @@ for:
     - pwsh: |
             [string]$target = "./mssln/$env:PLATFORM/$env:CONFIGURATION/samples01-test.exe"
             Start-Process -NoNewWindow -FilePath "$target" -ArgumentList '--gtest_color=yes'
+
+  - matrix:
+      only:
+      - image: Visual Studio 2019
+        BUILDER: CMake
+
+    install:
+    - pwsh: |
+            pwsh --version
+            # installation of prerequisites: gtest
+            nuget install Microsoft.googletest.v140.windesktop.msvcstl.static.rt-dyn -Version 1.8.1.5 -OutputDirectory ../external/packages
+
+    build_script:
+    - pwsh: pwsh -NonInteractive samples01/scripts/build-Microsoft.ps1 $env:CONFIGURATION
+    test_script:
+    - pwsh: pwsh -NonInteractive samples01/scripts/test-Microsoft.ps1 $env:CONFIGURATION
 
   - matrix:
       only:

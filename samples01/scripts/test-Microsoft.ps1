@@ -28,9 +28,10 @@ function main( [Parameter( Position = 0 )][string] $thisScriptPath, [Parameter( 
 
 	# Запускаем тестирование проекта
 	&{
-		Push-Location "$buildDirPath" `
-		&& ctest -VV -C $buildType
-
+		Push-Location "$buildDirPath" > $null 2> $null
+		if( $? ) {
+			ctest -VV -C $buildType
+		}
 		Pop-Location
 	}
 }
