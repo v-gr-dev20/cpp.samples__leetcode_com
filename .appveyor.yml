@@ -14,6 +14,8 @@ environment:
   - BUILDER: MSBuilder
     HOST_OR_DOCKER: host
   - BUILDER: CMake
+    HOST_OR_DOCKER: host
+  - BUILDER: CMake
     HOST_OR_DOCKER: docker
 
 matrix:
@@ -21,6 +23,8 @@ matrix:
   exclude:
     - image: Visual Studio 2019
       HOST_OR_DOCKER: docker
+    - image: Visual Studio 2019
+      BUILDER: CMake
     - image: Ubuntu
       BUILDER: MSBuilder
 
@@ -47,6 +51,26 @@ for:
     - pwsh: |
             [string]$target = "./mssln/$env:PLATFORM/$env:CONFIGURATION/samples01-test.exe"
             Start-Process -NoNewWindow -FilePath "$target" -ArgumentList '--gtest_color=yes'
+
+  - matrix:
+      only:
+      - image: Ubuntu
+        HOST_OR_DOCKER: host
+
+    install:
+    - sh: |
+          # installation of prerequisites: gtest
+          sudo apt -y update
+          sudo apt -y install libgtest-dev \
+            && sudo mkdir -p /usr/src/gtest/build \
+            && pushd /usr/src/gtest/build \
+            && sudo cmake .. \
+            && sudo make install
+          popd
+          sudo rm -rf /usr/src/googletest
+          sudo rm /usr/src/gtest
+    build_script:
+    - sh: bash samples01/scripts/build-Linux.sh $CONFIGURATION
 
   - matrix:
       only:
