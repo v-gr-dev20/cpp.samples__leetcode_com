@@ -71,4 +71,8 @@ cd $(dirname "$0")/.. \
 	&& cd "$buildDirName/$buildType" \
 	&& cmake -DCMAKE_BUILD_TYPE="$buildType" ../.. \
 	&& cmake --build . \
-	&& ctest -VV -C "$buildType"
+	&& {
+		if isCalledFromContainer ;then
+			ctest -VV -C "$buildType"
+		fi
+	}

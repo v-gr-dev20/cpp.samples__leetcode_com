@@ -1,5 +1,5 @@
 # !Powershell
-# Скрипт для запуска в Windows процесса сборки проекта в среде windows-cmake-MSVS.
+# Скрипт для запуска в Windows процесса тестирования проекта в среде windows-cmake-MSVS.
 # Скрипт определяет месторасположение проекта для сборки исходя из собственного месторасположения.
 # Скрипт должен находиться в дочерней папке проекта, например, <проект>/scripts.
 
@@ -26,11 +26,10 @@ function main( [Parameter( Position = 0 )][string] $thisScriptPath, [Parameter( 
 		mkdir -p "$buildDirPath"
 	}
 
-	# Запускаем сборку проекта
+	# Запускаем тестирование проекта
 	&{
 		Push-Location "$buildDirPath" `
-		&& cmake -DCMAKE_BUILD_TYPE=$buildType .. `
-		&& cmake --build . --config $buildType
+		&& ctest -VV -C $buildType
 
 		Pop-Location
 	}

@@ -65,7 +65,8 @@ mkdir demo `
 ```
 mkdir demo \
 && git clone --branch dev -- https://github.com/v-gr-dev20/cpp.samples__leetcode_com.git demo \
-&& bash demo/samples01/scripts/build-Linux.sh
+&& bash demo/samples01/scripts/build-Linux.sh \
+&& bash demo/samples01/scripts/test-Linux.sh
 ```
 При этом ожидается старт процесса сборки проекта, после чего следует выполнение целевой программы с выводом в консоли результатов тестов в формате gtest.
 

@@ -71,6 +71,8 @@ for:
           sudo rm /usr/src/gtest
     build_script:
     - sh: bash samples01/scripts/build-Linux.sh $CONFIGURATION
+    test_script:
+    - sh: bash samples01/scripts/test-Linux.sh $CONFIGURATION
 
   - matrix:
       only:
