@@ -50,7 +50,8 @@ isGitInstalled() {
 }
 
 isGtestInstalled() {
-	test -d /usr/local/include/gtest
+	test -f /usr/include/gtest/gtest.h \
+	|| test -f /usr/local/include/gtest/gtest.h
 }
 
 isCalledFromContainer() {

@@ -1,7 +1,7 @@
 version: 1.0.{build}
 image:
   - Visual Studio 2019
-  - Ubuntu
+  - Ubuntu2004
 branches:
   only:
   - dev
@@ -23,7 +23,7 @@ matrix:
   exclude:
     - image: Visual Studio 2019
       HOST_OR_DOCKER: docker
-    - image: Ubuntu
+    - image: Ubuntu2004
       BUILDER: MSBuilder
 
 init:
@@ -68,7 +68,7 @@ for:
 
   - matrix:
       only:
-      - image: Ubuntu
+      - image: Ubuntu2004
         HOST_OR_DOCKER: host
 
     install:
@@ -78,8 +78,7 @@ for:
           sudo apt -y install libgtest-dev \
             && sudo mkdir -p /usr/src/gtest/build \
             && pushd /usr/src/gtest/build \
-            && sudo cmake .. \
-            && sudo make install
+            && sudo cmake --build ..
           popd
           sudo rm -rf /usr/src/googletest
           sudo rm /usr/src/gtest
@@ -90,7 +89,7 @@ for:
 
   - matrix:
       only:
-      - image: Ubuntu
+      - image: Ubuntu2004
         HOST_OR_DOCKER: docker
     build_script:
     - sh: bash samples01/scripts/build-Linux.sh $CONFIGURATION
