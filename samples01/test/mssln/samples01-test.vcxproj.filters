@@ -8,7 +8,6 @@
       <Filter>common</Filter>
     </ClCompile>
     <ClCompile Include="..\main.cpp" />
-    <ClCompile Include="..\tests.cpp" />
     <ClCompile Include="..\pch.cpp" />
     <ClCompile Include="..\..\src\leetcode_com__4Sum__solution.cpp">
       <Filter>src</Filter>
@@ -94,6 +93,51 @@
     <ClCompile Include="..\..\src\new_sample_solution.cpp">
       <Filter>src</Filter>
     </ClCompile>
+    <ClCompile Include="..\leetcode_com__4Sum__test.cpp">
+      <Filter>test</Filter>
+    </ClCompile>
+    <ClCompile Include="..\leetcode_com__add_two_numbers__test.cpp">
+      <Filter>test</Filter>
+    </ClCompile>
+    <ClCompile Include="..\leetcode_com__distinct_subsequences__test.cpp">
+      <Filter>test</Filter>
+    </ClCompile>
+    <ClCompile Include="..\leetcode_com__divide_two_integers__test.cpp">
+      <Filter>test</Filter>
+    </ClCompile>
+    <ClCompile Include="..\leetcode_com__find_first_and_last_position_of_element_in_sorted_array__test.cpp">
+      <Filter>test</Filter>
+    </ClCompile>
+    <ClCompile Include="..\leetcode_com__find_minimum_in_rotated_sorted_array_ii__test.cpp">
+      <Filter>test</Filter>
+    </ClCompile>
+    <ClCompile Include="..\leetcode_com__first_missing_positive__test.cpp">
+      <Filter>test</Filter>
+    </ClCompile>
+    <ClCompile Include="..\leetcode_com__largest_plus_sign__test.cpp">
+      <Filter>test</Filter>
+    </ClCompile>
+    <ClCompile Include="..\leetcode_com__median_of_two_sorted_arrays__test.cpp">
+      <Filter>test</Filter>
+    </ClCompile>
+    <ClCompile Include="..\leetcode_com__number_of_islands__test.cpp">
+      <Filter>test</Filter>
+    </ClCompile>
+    <ClCompile Include="..\leetcode_com__palindromic_substrings__test.cpp">
+      <Filter>test</Filter>
+    </ClCompile>
+    <ClCompile Include="..\leetcode_com__shortest_path_in_a_grid_with_obstacles_elimination__test.cpp">
+      <Filter>test</Filter>
+    </ClCompile>
+    <ClCompile Include="..\leetcode_com__subarray_sum_equals_k__test.cpp">
+      <Filter>test</Filter>
+    </ClCompile>
+    <ClCompile Include="..\new_sample_test.cpp">
+      <Filter>test</Filter>
+    </ClCompile>
+    <ClCompile Include="..\test.cpp">
+      <Filter>test</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\pch.h" />
@@ -157,6 +201,9 @@
     <ClInclude Include="..\..\src\new_sample.h">
       <Filter>src</Filter>
     </ClInclude>
+    <ClInclude Include="..\test.h">
+      <Filter>test</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
@@ -167,6 +214,9 @@
     </Filter>
     <Filter Include="common">
       <UniqueIdentifier>{c640c072-3f92-4ea2-a8f9-03bf9cce7e3f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="test">
+      <UniqueIdentifier>{7d6fe56c-4ad6-4112-89bd-a98bf075e81f}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
 </Project>

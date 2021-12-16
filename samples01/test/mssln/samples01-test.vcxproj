@@ -54,6 +54,7 @@
     <ClInclude Include="..\..\src\leetcode_com__subarray_sum_equals_k.h" />
     <ClInclude Include="..\..\src\new_sample.h" />
     <ClInclude Include="..\pch.h" />
+    <ClInclude Include="..\test.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\..\..\common\tools.cpp" />
@@ -86,14 +87,28 @@
     <ClCompile Include="..\..\src\leetcode_com__subarray_sum_equals_k.cpp" />
     <ClCompile Include="..\..\src\new_sample.cpp" />
     <ClCompile Include="..\..\src\new_sample_solution.cpp" />
+    <ClCompile Include="..\leetcode_com__4Sum__test.cpp" />
+    <ClCompile Include="..\leetcode_com__add_two_numbers__test.cpp" />
+    <ClCompile Include="..\leetcode_com__distinct_subsequences__test.cpp" />
+    <ClCompile Include="..\leetcode_com__divide_two_integers__test.cpp" />
+    <ClCompile Include="..\leetcode_com__find_first_and_last_position_of_element_in_sorted_array__test.cpp" />
+    <ClCompile Include="..\leetcode_com__find_minimum_in_rotated_sorted_array_ii__test.cpp" />
+    <ClCompile Include="..\leetcode_com__first_missing_positive__test.cpp" />
+    <ClCompile Include="..\leetcode_com__largest_plus_sign__test.cpp" />
+    <ClCompile Include="..\leetcode_com__median_of_two_sorted_arrays__test.cpp" />
+    <ClCompile Include="..\leetcode_com__number_of_islands__test.cpp" />
+    <ClCompile Include="..\leetcode_com__palindromic_substrings__test.cpp" />
+    <ClCompile Include="..\leetcode_com__shortest_path_in_a_grid_with_obstacles_elimination__test.cpp" />
+    <ClCompile Include="..\leetcode_com__subarray_sum_equals_k__test.cpp" />
     <ClCompile Include="..\main.cpp" />
-    <ClCompile Include="..\tests.cpp" />
+    <ClCompile Include="..\new_sample_test.cpp" />
     <ClCompile Include="..\pch.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Create</PrecompiledHeader>
     </ClCompile>
+    <ClCompile Include="..\test.cpp" />
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="Microsoft.googletest.v140.windesktop.msvcstl.static.rt-dyn" Version="1.8.1.5" />

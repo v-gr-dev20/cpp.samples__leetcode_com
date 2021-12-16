@@ -33,12 +33,12 @@ v.gr.dev20@gmail.com
 
 <a id="consist"></a>
 ### Из чего состоит проект
-Из однородных C++ модулей для каждой решенной задачи с leetcode.com и вспомогательных инфраструктурных модулей: ввод-вывод, обработка ошибок, запуск, тесты. Решения задач находятся в файлах [./src/\*_solution.cpp](samples01/src) внутри анонимного``` namespace{/*здесь*/}```. Тесты gtest размещены в [./test/tests.cpp](samples01/test/tests.cpp). Преднастройка gtest и запуск - в [./test/main.cpp](samples01/test/main.cpp). Вспомогательные программные модули - в [../common/\*.cpp,\*.h](common).\
-Для добавления нового модуля задачи, например ```new_sample```, достаточно добавить в проект три файла:\
+Из однородных C++ модулей для каждой решенной задачи с leetcode.com и вспомогательных инфраструктурных модулей: ввод-вывод, обработка ошибок, запуск, тесты. Решения задач находятся в файлах [./src/\*_solution.cpp](samples01/src) внутри анонимного``` namespace{/*здесь*/}```. Тесты gtest размещены в [./test/*_test.cpp](samples01/test/). Преднастройка gtest и запуск - в [./test/main.cpp](samples01/test/main.cpp). Вспомогательные программные модули - в [../common/\*.cpp,\*.h](common).\
+Для добавления нового модуля задачи, например ```new_sample```, достаточно добавить в проект четыре файла:\
 	- [./src/new_sample.h](samples01/src/new_sample.h) - определение ```class new_sample: public CBaseSample```, наследующего интерфейс [ISample](common/BaseSample.h#L13-L25),\
 	- [./src/new_sample.cpp](samples01/src/new_sample.cpp) - реализация интерфейса ```ISample``` для нового класса ```new_sample``` с определением уникального идентификатора в конструкторе ```CBaseSample("```[new_sample](samples01/src/new_sample.cpp#:~:text=%3A%20CBaseSample(-,%22new_sample%22,-))```")```,\
 	- [./src/new_sample_solution.cpp](samples01/src/new_sample_solution.cpp) - основной алгоритм решения в формате, который требуется на leetcode.com, и реализация интерфейса запуска решения [Run](samples01/src/new_sample_solution.cpp#L22-L25),\
- Еще следует добавить в [./test/tests.cpp](samples01/test/tests.cpp#L10-L19) набор тестов, соответствующих примерам ввода-вывода в заключительной части описания задачи на [leetcode.com/problems/*](https://leetcode.com/problems/4sum/). Добавляемые тесты и модули примеров с решениями будут скомпонованы в runtime посредством идентификатора [new_sample](samples01/test/tests.cpp#:~:text=TEST(-,new_sample,-%2C%20EXPECT_EQ01%20)%20%7B).
+	- [./test/new_sample_test.cpp](samples01/test/new_sample_test.cpp) - набор тестов, соответствующих примерам ввода-вывода в заключительной части описания задачи на [leetcode.com/problems/*](https://leetcode.com/problems/4sum/). Добавляемые тесты и модули примеров с решениями будут скомпонованы в runtime посредством идентификатора [new_sample](samples01/test/new_sample_test.cpp#:~:text=TEST(-,new_sample,-%2C%20EXPECT_EQ01%20)%20%7B).
 
 <a id="leetcode"></a>
 ### Как воспроизвести результаты на leetcode.com
