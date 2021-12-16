@@ -44,6 +44,8 @@ public:
 	int divide( int dividend, int divisor );
 };
 
+// Time:  O(log(N/M))
+// Space: O(1)
 int Solution::divide( int dividend, int divisor )
 {
 	if( 0 == dividend ) {

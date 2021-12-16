@@ -42,11 +42,9 @@ class Solution {
 public:
 	int numIslands( vector<vector<char>>& grid );
 };
-class Solution2 {
-public:
-	int numIslands( vector<vector<char>>& grid );
-};
 
+// Time:  O(n)
+// Space: O(n^(1/2))
 int Solution::numIslands( vector<vector<char>>& grid )
 {
 	size_t m = grid.size();
@@ -108,6 +106,13 @@ int Solution::numIslands( vector<vector<char>>& grid )
 	return eqVector.size()-1 - mergeCounter;
 }
 
+class Solution2 {
+public:
+	int numIslands( vector<vector<char>>& grid );
+};
+
+// Time:  O(n)
+// Space: O(n)
 int Solution2::numIslands( vector<vector<char>>& grid )
 {
 	size_t m = grid.size();

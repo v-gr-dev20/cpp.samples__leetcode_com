@@ -48,6 +48,8 @@ private:
 	inline CPlacingType getOnSquarePerimeterPlacing( const pair<int, int>& point ) const;
 };
 
+// Time:  O(n^(3/2))
+// Space: O(n)
 int Solution::orderOfLargestPlusSign( int n, vector<vector<int>>& mines )
 {
 	assert( 1 <= n && n <= 500 );

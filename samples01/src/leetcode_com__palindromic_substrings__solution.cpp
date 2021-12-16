@@ -33,6 +33,8 @@ public:
 	int countSubstrings(string s);
 };
 
+// Time:  O(n^2)
+// Space: O(n)
 int Solution::countSubstrings(string s)
 {
 	int count = s.size();

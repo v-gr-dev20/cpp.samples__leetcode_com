@@ -37,6 +37,8 @@ public:
 	vector<int> searchRange( vector<int>& nums, int target );
 };
 
+// Time:  O(log n)
+// Space: O(1)
 vector<int> Solution::searchRange( vector<int>& nums, int target )
 {
 	const vector<int> noResult = { -1, -1 };

@@ -56,6 +56,8 @@ private:
 	int findNumDistinct( const vector<char>& sAfterFilter, const vector<char>& tVector );
 };
 
+// Time:  O(n*m)
+// Space: O(n*m)
 int Solution::numDistinct( string s, string t )
 {
 	set<char> tCharSet;

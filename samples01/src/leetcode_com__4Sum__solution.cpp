@@ -35,6 +35,8 @@ public:
 	vector<vector<int>> fourSum( vector<int>&, int );
 };
 
+// Time:  O(n^4)
+// Space: O(n^3)
 vector<vector<int>> Solution::fourSum( vector<int>& nums, int target )
 {
 	sort( nums.begin(), nums.end() );

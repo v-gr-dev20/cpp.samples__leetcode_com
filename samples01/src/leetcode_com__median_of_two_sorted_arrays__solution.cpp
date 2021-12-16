@@ -59,6 +59,8 @@ private:
 
 const tuple<bool, double> Solution::NoResult = make_tuple( false, .0 );
 
+// Time:  O(log(m + n))
+// Space: O(log(m + n))
 double Solution::findMedianSortedArrays( vector<int>& nums1, vector<int>& nums2 )
 {
 	assert( 0 < nums1.size() || 0 < nums2.size() );

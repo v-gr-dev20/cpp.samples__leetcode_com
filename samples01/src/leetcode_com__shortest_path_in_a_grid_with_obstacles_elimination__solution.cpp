@@ -54,6 +54,8 @@ public:
 	int shortestPath( vector<vector<int>>& grid, int k );
 };
 
+// Time:  O(n*k)
+// Space: O(n*k)
 int Solution::shortestPath( vector<vector<int>>& grid, int k )
 {
 	assert( 0 <= k );

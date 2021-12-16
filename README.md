@@ -43,7 +43,7 @@ v.gr.dev20@gmail.com
 // Medium
 // https://leetcode.com/problems/4sum/
 ```
-2. Скопировать из файла [./src/*_solution.cpp](samples01/src/leetcode_com__4Sum__solution.cpp) код внутри ```namespace{```[/\*здесь\*/](samples01/src/leetcode_com__4Sum__solution.cpp#L33-L90)```}```
+2. Скопировать из файла [./src/*_solution.cpp](samples01/src/leetcode_com__4Sum__solution.cpp) код внутри ```namespace{```[/\*здесь\*/](samples01/src/leetcode_com__4Sum__solution.cpp#L33-L92)```}```
  и заменить им весь код ```class Solution``` на открывшейся странице [leetcode.com/problems/*](https://leetcode.com/problems/4sum/) .
 3. Нажать ```[Run Code]``` внизу страницы [leetcode.com/problems/*](https://leetcode.com/problems/4sum/).
 

@@ -35,6 +35,8 @@ public:
 	ListNode* addTwoNumbers( ListNode* l1, ListNode* l2 );
 };
 
+// Time:  O(n)
+// Space: O(n)
 ListNode* Solution::addTwoNumbers( ListNode* l1, ListNode* l2 )
 {
 	auto rFirst = new ListNode();

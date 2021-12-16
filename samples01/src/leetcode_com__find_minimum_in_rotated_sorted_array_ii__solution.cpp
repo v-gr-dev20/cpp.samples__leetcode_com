@@ -48,6 +48,8 @@ int Solution::findMin(vector<int>& nums)
 	return doFindMinAndAreAllEq(nums.begin(), nums.end() - 1).first;
 }
 
+// Time:  O(n*log n)
+// Space: O(log n)
 pair<int, bool>  Solution::doFindMinAndAreAllEq(vector<int>::const_iterator first, vector<int>::const_iterator last)
 {
 	bool areAllEq = true;

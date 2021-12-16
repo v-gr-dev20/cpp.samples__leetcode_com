@@ -32,6 +32,8 @@ public:
 	int subarraySum(vector<int>& nums, int k);
 };
 
+// Time:  O(n)
+// Space: O(n)
 int Solution::subarraySum(vector<int>& nums, int k) {
 	int result = 0;
 	multiset<int> storedSums;

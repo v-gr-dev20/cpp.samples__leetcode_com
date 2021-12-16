@@ -36,6 +36,8 @@ private:
 	int findFirstMissed( vector<int>& nums, int left, int right, int beginValue );
 };
 
+// Time:  O(n*log n)
+// Space: O(log n)
 int Solution::firstMissingPositive( vector<int>& nums )
 {
 	int firstPositivePos = splitByMedian( nums, 0, nums.size() - 1, 1 );
