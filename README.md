@@ -7,7 +7,8 @@
 ### Содержание
 [ Цели ](#goals)\
 [ Кто автор ](#author)\
-[ Из чего состоит ](#consist)\
+[ Статистика автора на leetcode.com ](#stats)\
+[ Из чего состоит проект ](#consist)\
 [ Как воспроизвести результаты на leetcode.com ](#leetcode)\
 [ Как развернуть и воспроизвести результаты в Windows ](#windows)\
 [ Как развернуть и воспроизвести результаты в linux ](#linux)\
@@ -26,8 +27,12 @@
 ### Кто автор
 v.gr.dev20@gmail.com
 
+<a id="stats"></a>
+### Статистика автора на leetcode.com
+[![Статистика автора на leetcode.com](https://leetcode-stats-six.vercel.app/api?username=v-gr-dev20)](https://leetcode.com/v-gr-dev20/)
+
 <a id="consist"></a>
-### Из чего состоит
+### Из чего состоит проект
 Из однородных C++ модулей для каждой решенной задачи с leetcode.com и вспомогательных инфраструктурных модулей: ввод-вывод, обработка ошибок, запуск, тесты. Решения задач находятся в файлах [./src/\*_solution.cpp](samples01/src) внутри анонимного``` namespace{/*здесь*/}```. Тесты gtest размещены в [./test/tests.cpp](samples01/test/tests.cpp). Преднастройка gtest и запуск - в [./test/main.cpp](samples01/test/main.cpp). Вспомогательные программные модули - в [../common/\*.cpp,\*.h](common).\
 Для добавления нового модуля задачи, например ```new_sample```, достаточно добавить в проект три файла:\
 	- [./src/new_sample.h](samples01/src/new_sample.h) - определение ```class new_sample: public CBaseSample```, наследующего интерфейс [ISample](common/BaseSample.h#L13-L25),\
