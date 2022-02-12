@@ -5,8 +5,6 @@
 
 function main( [Parameter( Position = 0 )][string] $thisScriptPath, [Parameter( Position = 1 )][string[]] $commandLineArgs )
 {
-	clear
-	
 	# Ожидается параметр: тип сборки Release | Debug
 	$buildType = [string]$commandLineArgs[0]
 	if( [string]::IsNullOrEmpty( $buildType ) ) {

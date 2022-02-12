@@ -5,8 +5,6 @@
 
 function main( [Parameter( Position = 0 )][string] $thisScriptPath, [Parameter( Position = 1 )][string[]] $commandLineArgs )
 {
-	clear
-	
 	# Получаем путь и имя проекта - имя родительской папки скрипта на 2 уровня выше
 	$thisScriptDirPath = $thisScriptPath |Split-Path -parent
 	$projectPath = $thisScriptDirPath |Split-Path -parent
