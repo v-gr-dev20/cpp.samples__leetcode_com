@@ -5,6 +5,7 @@ image:
 branches:
   only:
   - dev
+  - demo
 configuration:
   - Debug
   - Release
