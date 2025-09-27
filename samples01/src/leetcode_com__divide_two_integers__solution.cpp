@@ -36,6 +36,7 @@
 
 #include "pch.h"
 #include "leetcode_com__divide_two_integers.h"
+#include <limits>
 
 namespace {
 // Solution public: as on the leetcode.com
@@ -51,14 +52,14 @@ int Solution::divide( int dividend, int divisor )
 	if( 0 == dividend ) {
 		return 0;
 	}
-	if( INT32_MIN == divisor ) {
+	if( std::numeric_limits<int>::min() == divisor ) {
 		return dividend == divisor ? 1 : 0;
 	}
 	int restDivident = dividend;
 	int result = 0;
-	if( INT32_MIN == dividend ) {
+	if( std::numeric_limits<int>::min() == dividend ) {
 		if( -1 == divisor ) {
-			return INT32_MAX;
+			return std::numeric_limits<int>::max();
 		}
 		if( 1 == divisor ) {
 			return dividend;
