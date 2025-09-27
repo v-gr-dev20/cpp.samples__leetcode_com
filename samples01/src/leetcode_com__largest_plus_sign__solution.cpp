@@ -132,6 +132,7 @@ pair<int, int> Solution::getNextClockwiseOnSquarePerimeterPosition( const pair<i
 			return { current.first-1, current.second };
 	}
 	assert( true );
+	throw "Эта строка не будет достигнута.";
 }
 
 Solution::CPlacingType Solution::getOnSquarePerimeterPlacing( const pair<int, int>& current ) const
